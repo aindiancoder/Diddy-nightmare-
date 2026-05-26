@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+<h1>diddy nightmare</h1>
+<p id="display"></p>
+<script>
+    const game = {
+    start: {
+        text: `you were running from police and saw a bunglow`
+    },
+    scene2: {
+        text: `you enter in the bunglow,bunglow looks great`
+    },
+    scene3: {
+        text: `you decided to ask for help`
+    },
+    scene4: {
+        text: ` suddenly diddy came and dragged you to basement ,"epstein ending"`
+    },
+};
+console.log(game.start.text);
+console.log(game.scene2.text);
+console.log(game.scene3.text);
+console.log(game.scene4.text);
+setTimeout (() => {
+document.getElementById("display").innerText = game.start.text; 
+
+},90);
+setTimeout(() => {
+document.getElementById("display").innerText = game.scene2.text;
+},24000);
+setTimeout(() => {
+document.getElementById("display").innerText = game.scene3.text;
+},30000);
+setTimeout(() => {
+document.getElementById("display").innerText = game.scene4.text;
+},36000);
+
+
+
+</script>      
+    </body>
+</html>
