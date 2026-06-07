@@ -1,46 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
-    </head>
-    <body>
-<h1>diddy nightmare</h1>
-<p id="display"></p>
-<script>
-    const game = {
-    start: {
-        text: `you were running from police and saw a bunglow`
-    },
-    scene2: {
-        text: `you enter in the bunglow,bunglow looks great`
-    },
-    scene3: {
-        text: `you decided to ask for help`
-    },
-    scene4: {
-        text: ` suddenly diddy came and dragged you to basement ,"epstein ending"`
-    },
-};
-console.log(game.start.text);
-console.log(game.scene2.text);
-console.log(game.scene3.text);
-console.log(game.scene4.text);
-setTimeout (() => {
-document.getElementById("display").innerText = game.start.text; 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An informational project documenting key events and developments">
+    <title>Diddy Nightmare - Information Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Diddy Nightmare</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
 
-},90);
-setTimeout(() => {
-document.getElementById("display").innerText = game.scene2.text;
-},24000);
-setTimeout(() => {
-document.getElementById("display").innerText = game.scene3.text;
-},30000);
-setTimeout(() => {
-document.getElementById("display").innerText = game.scene4.text;
-},36000);
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Information Hub</h2>
+                <p>A comprehensive resource documenting significant events and developments</p>
+                <button class="cta-button" onclick="document.getElementById('timeline').scrollIntoView({behavior: 'smooth'})">
+                    Explore Timeline
+                </button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2>Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Event 1</h3>
+                        <p class="date">Date: TBD</p>
+                        <p>Add your content here</p>
+                    </div>
+                </div>
 
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Event 2</h3>
+                        <p class="date">Date: TBD</p>
+                        <p>Add your content here</p>
+                    </div>
+                </div>
 
-</script>      
-    </body>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Event 3</h3>
+                        <p class="date">Date: TBD</p>
+                        <p>Add your content here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About This Project</h2>
+            <div class="about-content">
+                <p>This project aims to provide factual, well-sourced information about significant events and developments.</p>
+                <p>Our mission is to educate and inform through comprehensive documentation and accessible resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2>Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>📊 Articles</h3>
+                    <p>Read detailed articles and analysis</p>
+                </div>
+                <div class="resource-card">
+                    <h3>📸 Gallery</h3>
+                    <p>View relevant images and media</p>
+                </div>
+                <div class="resource-card">
+                    <h3>📖 References</h3>
+                    <p>Access sources and citations</p>
+                </div>
+                <div class="resource-card">
+                    <h3>💬 Discussion</h3>
+                    <p>Join the conversation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Diddy Nightmare Project. All rights reserved.</p>
+            <p><a href="#home">Back to top</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
